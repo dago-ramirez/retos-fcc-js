@@ -1,10 +1,11 @@
 function palindrome(str) {
     var strInv = str.match(/[a-z0-9]/ig).reverse().join('').toLowerCase();
     str = str.match(/[a-z0-9]/ig).join('').toLowerCase();
-    console.log(str);
-    console.log(strInv);
-    console.log(strInv === str);
-    return strInv === str;
+    let isPalindrome = strInv === str;
+    console.log("Input string: " + str);
+    console.log("Output string: " + strInv);
+    console.log("Is a palindrome? " + isPalindrome + "\n\n");
+    return isPalindrome;
   }
 
 palindrome("my eye"); // should return true.

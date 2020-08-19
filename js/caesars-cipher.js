@@ -9,8 +9,8 @@ function rot13(str) {
             return String.fromCharCode(codeChar - 13);
         }
     }).join("");
-    console.log(str);
-    console.log(strCipher);
+    console.log("Input string: " + str);
+    console.log("Output string: " + strCipher + "\n\n");
     return strCipher;
 }
   
