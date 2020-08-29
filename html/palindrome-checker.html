@@ -22,15 +22,53 @@
     </header>
     <main class="container text-center">
       <h1 id="palindrome" class="my-5 py-2">Palindrome Checker</h1>
-      <h3 class="my-5 py-2 text-info">look at the console to see the result</h3>
+      <div class="input-group my-5 py-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Enter a word or a sentence</span>
+        </div>
+        <input type="text" aria-label="First name" class="form-control input-str" required>
+        <button type="button" class="btn btn-success send-button1" data-toggle="modal" data-target="#myModal1">Enviar</button>
+      </div>    
+      <div class="modal" tabindex="-1" id="myModal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-dog-title">Result</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p class="modal-checker-message"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="text-info">Some examples:</h3>
+      <p>"eye"; should return true.</p>
+      <p>"_eye"; should return true.</p>
+      <p>"race car"; should return true.</p>
+      <p>"A man, a plan, a canal. Panama"; should return true.</p>
+      <p>"never odd or even"; should return true.</p>
+      <p>"not a palindrome"; should return false.</p>
+      <p>"my eye"; should return false.</p>
+      <p>"nope"; should return false.</p>
+      <p>"almostomla"; should return false.</p>
+      <p>"My age is 0, 0 si ega ym."; should return true.</p>
+      <p>"1 eye for of 1 eye."; should return false.</p>
+      <p>"0_0 (: /-\ :) 0-0"; should return true.</p>
+      <p>"five|\_/|four"; should return false.</p>      
       <a href="../index.html" class="btn btn-success btn-lg my-4" tabindex="-1" role="button" aria-disabled="true">RETURN</a>
     </main>
-    <footer class="mt-4">
-      <div class="footer-class row border-top border-dark mt-5 mx-0">
-          <div class="col-12 text-center">
-              <span class="border-top-0 border-success"></span>
-              <p class="py-3 my-3">| Medellín | Antioquia | © Created by Dago Ramírez |</p>
-          </div>
+    <footer class="">
+      <div class="footer-class row mt-5 border-top border-dark mx-0">
+        <div class="col-12 text-center">
+          <span class="border-top-0 border-success"></span>
+          <p class="py-3 my-3">| Medellín | Colombia | © Created by Dago Ramírez |</p>
+        </div>
       </div>
     </footer>
 

@@ -23,14 +23,39 @@
     <main class="container text-center">
         <h1 id="roman-number" class="my-5 py-2">Caesars Cipher</h1>
         <h3 class="my-5 py-2 text-info">look at the console to see the result</h3>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Enter a word or a sentence (valor numérico en años)</span>
+          </div>
+          <input type="text" aria-label="First name" class="form-control input-dog-age" required>
+          <button type="button" class="btn btn-success send-button3" data-toggle="modal" data-target="#myModal2">Enviar</button>
+        </div>    
+        <div class="modal" tabindex="-1" id="myModal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-dog-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="modal-dog-message"></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <a href="../index.html" class="btn btn-success btn-lg my-4" tabindex="-1" role="button" aria-disabled="true">RETURN</a>
     </main>
-    <footer class="mt-4">
-      <div class="footer-class row border-top border-dark mt-5 mx-0">
-          <div class="col-12 text-center">
-              <span class="border-top-0 border-success"></span>
-              <p class="py-3 my-3">| Medellín | Antioquia | © Created by Dago Ramírez |</p>
-          </div>
+    <footer class="">
+      <div class="footer-class row mt-5 border-top border-dark mx-0">
+        <div class="col-12 text-center">
+          <span class="border-top-0 border-success"></span>
+          <p class="py-3 my-3">| Medellín | Colombia | © Created by Dago Ramírez |</p>
+        </div>
       </div>
     </footer>
 
